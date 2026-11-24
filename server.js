@@ -9,6 +9,14 @@ const express = require("express")
 const env = require("dotenv").config()
 const app = express()
 const static = require("./routes/static")
+const expressLayouts = require("express-ejs-layouts")
+
+/* ***********************
+ * View Engine and Template 
+ *************************/
+app.set("view engine", "ejs")
+app.use(expressLayouts)
+app.set("layout", "./layouts/layout")
 
 /* ***********************
  * Routes
@@ -28,3 +36,4 @@ const host = process.env.HOST
 app.listen(port, () => {
   console.log(`app listening on ${host}:${port}`)
 })
+
