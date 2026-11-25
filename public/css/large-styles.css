@@ -1,0 +1,50 @@
+@media(min-width: 768px) {
+
+    #myButton {
+        display: none;
+    }
+
+
+    nav ul.navlist {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+        justify-items: center;
+        padding: 0.5rem 0;
+        margin: 0;
+    }
+
+    nav {
+        display: block;
+        width: auto;
+        grid-template-rows: 1fr;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+        background-color: rgb(48, 48, 72);
+    }
+
+    nav ul li a {
+        padding: 0.5rem 1rem;
+    }
+
+    body {
+        background-image: url(/images/site/checkerboard.jpg);
+        /* desktop-only background */
+    }
+
+    .page-wrapper {
+        max-width: 1100px;
+        margin: 30px auto;
+        background-color: #ffffff;
+        border: 4px solid #222;
+        padding: 20px;
+    }
+
+    #inv-display {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+  }
+
+}

@@ -23,8 +23,12 @@ app.set("layout", "./layouts/layout")
  *************************/
 app.use(require ("./routes/static"))
 // index route 
-app.get("/", function(req, res){
-  res.render("index", {title:"Home"})
+// Index Route
+app.get("/", function(req, res) {
+  res.render("index", {
+    title: "Home",
+    description: "Welcome to our website."
+  })
 })
 
 /* ***********************
